@@ -1,6 +1,6 @@
 {
   "name": "dynamic-text",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A JavaScript library to create responsive text that scales based on the container's width.",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,9 @@
     "url": "https://github.com/MustafaBaban/dynamic-text/issues"
   },
   "homepage": "https://github.com/MustafaBaban/dynamic-text#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/mustafababan"
+  },
   "peerDependencies": {
     "vue": "^3.0.0"
   },
