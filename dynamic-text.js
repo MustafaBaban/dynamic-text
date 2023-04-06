@@ -1,4 +1,4 @@
-class ResponsiveText {
+class DynamicText {
   constructor(element, options = {}) {
     this.element = element;
     this.minFontSize = options.minFontSize || 12;
@@ -20,8 +20,8 @@ class ResponsiveText {
 
     newFontSize = Math.max(this.minFontSize, newFontSize);
     newFontSize = Math.min(this.maxFontSize, newFontSize);
-    
+
     this.element.style.fontSize = `${newFontSize}px`;
   }
 }
-export default ResponsiveText;
+export default DynamicText;

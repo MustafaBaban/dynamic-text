@@ -1,15 +1,16 @@
-import ResponsiveText from './responsive-text';
+// for Vue
+import DynamicText from './dynamic-text';
 
 export default {
   install(app) {
-    app.directive('responsive-text', {
+    app.directive('dynamic-text', {
       mounted(el, binding) {
         const options = binding.value || {};
-        const responsiveTextInstance = new ResponsiveText(el, options);
-        el.__responsiveTextInstance__ = responsiveTextInstance;
+        const dynamicTextInstance = new DynamicText(el, options);
+        el.__dynamicTextInstance__ = dynamicTextInstance;
       },
       beforeUnmount(el) {
-        window.removeEventListener('resize', el.__responsiveTextInstance__.updateFontSize);
+        window.removeEventListener('resize', el.__dynamicTextInstance__.updateFontSize);
       },
     });
   },
