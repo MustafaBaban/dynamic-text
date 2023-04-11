@@ -1,8 +1,13 @@
 {
   "name": "@mustafababan/dynamic-text",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A JavaScript library to create responsive text that scales based on the container's width.",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./vue": "./src/vue-dynamic-text.js",
+    "./react": "./src/react-dynamic-text.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
